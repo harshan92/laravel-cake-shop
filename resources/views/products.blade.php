@@ -15,60 +15,30 @@
       </div>
 
       <div class="product_container">
+        @foreach ($products as $product)
         <div class="box_container">
           <div class="img-box">
-            <img src="{{ asset('images/p1.png') }}" class="img1" alt="">
+            <img src="{{ asset('images/'.$product->image) }}" class="img1" alt="" width="100px" height="200px">
           </div>
           <div class="box">
             <div class="detail-box">
               <h5>
-                Classic Treat
+                {{ $product->name }}
               </h5>
               <p>
-                There are many variations of passages of Lorem Ipsum available, butdon't look even slightly believable.
+                {{ $product->description }}
               </p>
-              <a href="">
-                <img src="{{ asset('images/right-arrow.png') }}" alt="">
-              </a>
+              {{-- <button>Add to cart</button> --}}
+               <form action="">
+                <input class="btn btn-outline-light add-to-cart-btn" type="submit" value="Add To Cart">
+               </form>
+              
             </div>
           </div>
         </div>
-        <div class="box_container">
-          <div class="img-box">
-            <img src="{{ asset('images/p2.png') }}" class="img1" alt="">
-          </div>
-          <div class="box active">
-            <div class="detail-box">
-              <h5>
-                Party Special
-              </h5>
-              <p>
-                There are many variations of passages of Lorem Ipsum available, butdon't look even slightly believable.
-              </p>
-              <a href="">
-                <img src="{{ asset('images/right-arrow.png') }}" alt="">
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="box_container">
-          <div class="img-box">
-            <img src="{{ asset('images/p3.png') }}" class="img1" alt="">
-          </div>
-          <div class="box">
-            <div class="detail-box">
-              <h5>
-                Sweet Treat
-              </h5>
-              <p>
-                There are many variations of passages of Lorem Ipsum available, butdon't look even slightly believable.
-              </p>
-              <a href="">
-                <img src="{{ asset('images/right-arrow.png') }}" alt="">
-              </a>
-            </div>
-          </div>
-        </div>
+        @endforeach
+        
+        
       </div>
     </div>
   </section>
