@@ -23,10 +23,13 @@
           <div class="box">
             <div class="detail-box">
               <h5>
-                {{ $product->name }}
+                <a href="{{ route('single_product',['id'=>$product->id]) }}">{{ $product->name }}</a>
               </h5>
               <p>
                 {{ $product->description }}
+              </p>
+              <p>
+                {{ $product->price }}
               </p>
               {{-- <button>Add to cart</button> --}}
                <form action="">

@@ -18,4 +18,10 @@ class ProjectController extends Controller
         $products=DB::table('products')->get();
         return view('products',['products'=>$products]);
     }
+
+    public function single_product(Request $request, $id)
+    {
+        $product=DB::table('products')->where('id',$id)->get();
+        return view('single_product',['product_array'=>$product]);
+    }
 }

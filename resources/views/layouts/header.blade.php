@@ -12,7 +12,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Cakejoey</title>
+  <title>Chalani's Cake Shop</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
@@ -38,7 +38,7 @@
           <a class="navbar-brand" href="index.html">
             <img src="{{ asset('images/logo.png') }}" alt="">
             <span>
-              Cakejoey
+              Chalani's Cake
             </span>
           </a>
           </a>

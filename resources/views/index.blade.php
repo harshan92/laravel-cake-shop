@@ -87,9 +87,13 @@
             <p>
               {{ $product->description }}
             </p>
-            <a href="">
-              <img src="{{ asset('images/right-arrow.png') }}" alt="">
-            </a>
+            <p>
+              {{ $product->price }}
+            </p>
+            {{-- <button>Add to cart</button> --}}
+             <form action="">
+              <input class="btn btn-outline-light add-to-cart-btn" type="submit" value="Add To Cart">
+             </form>
           </div>
         </div>
       </div>
